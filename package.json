@@ -1,0 +1,52 @@
+{
+  "name": "adal-react-renew",
+  "version": "0.5.2",
+  "description": "Azure Active Directory (ADAL) support for ReactJS with silent renew token fix",
+  "main": "lib/react-adal.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir lib",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "sdk:update": "node internals/update-sdk.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajeevVerma/adal-react-v1.git"
+  },
+  "keywords": [
+    "react",
+    "implicit",
+    "js",
+    "AAD",
+    "adal",
+    "oauth",
+    "oauth2",
+    "azure",
+    "adal-react-renew",
+    "actve",
+    "directory",
+    "msal",
+    "adal-react"
+  ],
+  "author": "rajeevverma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RajeevVerma/adal-react-v1/issues"
+  },
+  "homepage": "https://github.com/RajeevVerma/adal-react-v1#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@salvoravida/eslint-config": "0.0.4",
+    "cross-env": "7.0.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
